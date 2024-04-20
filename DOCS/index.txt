@@ -1,0 +1,4 @@
+En aquest directori DOCS es troben els seguents documents:
+> Relacio_Classes Document on es detalla qui ha fet cada classe
+> javadoc documentacio generada amb javadoc, per a visualitzala s'ha d'entrar a dins a veure el index.html
+> Manual_Usuari el manual d'usuari

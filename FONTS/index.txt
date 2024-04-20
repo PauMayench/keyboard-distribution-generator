@@ -1,0 +1,4 @@
+En aquest directori FONTS es troba el codi del projecte junt amb:
+> README.md explicacio de com executar, contruir i generar documentacio de l'aplicacio
+> make.sh / make.bat script per a generar documentacio i construir el executable
+> KeyLayoutGenerator.sh / KeyLayoutGenerator.bat script per a executar l'aplicacio

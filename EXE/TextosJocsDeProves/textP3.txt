@@ -1,0 +1,7 @@
+Sin embargo, para maximizar el impacto positivo en los ámbitos social y empresarial, es imperativo abordar los desafíos relacionados con la integración, seguridad y ética inherentes al uso de esta tecnología.
+
+La privacidad y el uso responsable de la información visual son áreas críticas que deben ser consideradas con detenimiento para evitar posibles riesgos, como el reconocimiento no autorizado de personas u objetos en imágenes. Además, una implementación exitosa requerirá inversiones considerables en infraestructura y formación para capitalizar plenamente el potencial de esta IA.\\
+
+En resumen, SAM tiene el potencial de impulsar el desarrollo y la accesibilidad de una gran variedad de campos, no obstante, su implementación exitosa dependerá de cómo las empresas aborden los desafíos técnicos, de integración y éticos.
+
+Se necesita reflexionar profundamente sobre cómo utilizarla de manera ética y responsable para evitar posibles implicaciones negativas y garantizar que su implementación contribuya al bienestar y progreso social de manera equitativa y segura para todos.

@@ -1,0 +1,82 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+version = '1.0-SNAPSHOT'
+
+ext {
+    javaMainClass = 'edu.upc.prop.cluster33.Main'
+}
+
+application {
+    mainClassName = javaMainClass
+}
+/*
+jar {
+    manifest {
+        attributes 'Main-Class': javaMainClass
+    }
+} */
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': javaMainClass
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    archiveBaseName = 'ProjectePROPsubgrup33_3'
+    archiveVersion = '3.0'
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
+
+javafx {
+    version = "16"
+    modules = [ 'javafx.controls' , 'javafx.fxml' ]
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    testImplementation('junit:junit:4.13.1')
+    implementation 'org.openjfx:javafx-controls:16'
+    implementation 'org.openjfx:javafx-fxml:16'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
+
+tasks.register('generateJavadoc', Javadoc) {
+    source = sourceSets.main.allJava
+    classpath = configurations.compileClasspath
+    destinationDir = file("$buildDir/docs/javadoc")
+
+
+    include 'edu/upc/prop/cluster33/**'
+
+    //exclude '**/drivers'
+
+    options {
+        author true
+        version true
+        links "https://docs.oracle.com/javase/8/docs/api/"
+        memberLevel = org.gradle.external.javadoc.JavadocMemberLevel.PRIVATE
+    }
+}

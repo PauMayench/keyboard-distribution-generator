@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"edu.upc.prop.cluster33"},{"l":"edu.upc.prop.cluster33.domini"},{"l":"edu.upc.prop.cluster33.excepcions"},{"l":"edu.upc.prop.cluster33.persistencia"},{"l":"edu.upc.prop.cluster33.presentacio"},{"l":"edu.upc.prop.cluster33.utils"}]
